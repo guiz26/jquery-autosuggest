@@ -46,6 +46,7 @@
             showResultList: true,
             showResultListWhenNoMatch: false,
             canGenerateNewSelections: true,
+            name:"as-value"
             start: function(){},
             selectionClick: function(elem){},
             selectionAdded: function(elem){},
@@ -120,7 +121,7 @@
                 var org_li = $("#as-original-"+x);
                 var results_holder = $('<div class="as-results" id="as-results-'+x+'"></div>').hide();
                 var results_ul =  $('<ul class="as-list"></ul>');
-                var values_input = $('<input type="hidden" class="as-values" name="as_values_'+x+'" id="as-values-'+x+'" />');
+                var values_input = $('<input type="hidden" class="as-values" name="'+opts.name+'" id="as-values-'+x+'" />');
                 var prefill_value = "";
                 if(typeof opts.preFill == "string"){
                     var vals = opts.preFill.split(",");
