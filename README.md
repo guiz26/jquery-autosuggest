@@ -117,6 +117,8 @@ The function will be passed two arguments:
 
 * **queryParam**: *string ("q" by default)* - The name of the param that will hold the search string value in the AJAX request.
 
+* **name**: *string ("as-value" by default)* - The name of input, You can use the input table (name="name[]")
+
 * **retrieveLimit**: *number (false by default)* - If set to a number, it will add a '&limit=' param to the AJAX request. It also limits the number of search results allowed to be displayed in the results dropdown box.
 
 * **extraParams**: *callback function* OR *string ("" by default)* - This will be added onto the end of the AJAX request URL. Make sure you add an '&' before each param. If used as a callback function, it must return a string of query params starting with '&'. The callback function is fired before each search is performed.

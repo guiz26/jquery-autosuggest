@@ -46,7 +46,7 @@
             showResultList: true,
             showResultListWhenNoMatch: false,
             canGenerateNewSelections: true,
-            name:"as-value"
+            name:"as-value",
             start: function(){},
             selectionClick: function(elem){},
             selectionAdded: function(elem){},
